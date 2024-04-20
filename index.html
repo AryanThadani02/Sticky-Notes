@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sticky Notes</title>
+  </head>
+  <body>
+    <div id="wrapper" class="container-fluid">
+      <div id="notes" class="row d-flex">
+        <div class="left col-6 d-flex pt-5 align-items-center mx-auto">
+          <div class="d-flex flex-column">
+            <textarea
+              style="width: 550px"
+              class="mx-auto p-3 m-5"
+              name=""
+              placeholder="Enter your notes here."
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button id="button" class="mx-auto rounded-pill py-2 px-3">
+              Add Note
+            </button>
+          </div>
+          <div class="mx-auto d-flex flex-column">
+            <label for="">Background Color</label>
+            <input id="bg" type="color" value="#ffffcc" />
+            <label for="">Text Color</label>
+            <input id="text" type="color" />
+          </div>
+        </div>
+        <div class="right col-6 d-flex align-items-start flex-wrap"></div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
